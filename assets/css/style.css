@@ -8,7 +8,7 @@ body{
     "aside main"
     "footer footer"
     ;
-    background-color:  #D8DED8;;
+    background-color:  #D8DED8;
 }
 
 .aside{
@@ -37,6 +37,9 @@ body{
     display: flex;
     justify-content: center;
     align-items: center;
+}
+.item-aside-mobil{
+    display: none;
 }
 main{
     display: grid;
@@ -67,10 +70,6 @@ main{
     width: 100px;
     background-color: #630000;
     color: #B59902;
-
-}
-.button-infor:hover{
-
 }
 .infor-item{
     place-self: center;
@@ -136,12 +135,10 @@ footer{
     width: 100%;
     height: 10vh;
     background-color:#630000;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
 }
-.redes{
-    display: flex;
-    justify-content: center;
-    gap: 50px;
-}
+
 .redes img{
     width: 100px;
     height: 100%;
@@ -152,8 +149,21 @@ footer{
         grid-template-columns: minmax(300px,500px);
         justify-content: center;
     }
+    .item-aside{
+        display: none;
+    }
     .info-img{
         display: none;
+    }
+    .item-aside-mobil{
+        display: flex;
+        flex-direction: column;
+        background-color:  #D8DED8;
+    }
+    .item-aside-mobil img{
+        width: 100%;
+        height: 100%;
+
     }
     .principal-item{
         /* grid-template-columns: repeat(auto-fit,minmax(75px, 250px)); */
