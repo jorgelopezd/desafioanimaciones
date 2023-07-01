@@ -10,24 +10,23 @@
 <body>
     <aside class="aside">
         <ul class="item-aside">
-            <li>home</li>
-            <li>Catalogo</li>
-            <li>img</li>
-            <li>contacto</li>
-            <li>footer</li>
+            <li><a href="#infor-grid">home</a></li>
+            <li><a href="#principal-container">Muestras</a></li>
+            <li><a href="#platos">Platos</a></li>
+            <li><a href="#footer">Footer</a></li>
         </ul>
     </aside>
     <main>
 
-        <section class="infor-grid">
+        <section class="infor-grid" id="infor-grid">
             <div class="infor-item">
-                <p>Visita el mejor restoran de la zona <br> revisa nuestros locales</p>
-                <button>Ver locales</button>
+                <p>Visita el mejor restoran de la zona <br> Revisa nuestros locales</p>
+                <button class="button-infor">Ver locales</button>
             </div>
             <img class="info-img" src="assets/img/principal.jpg" alt="">
         </section>
 
-        <section class="principal-container">
+        <section class="principal-container" id="principal-container">
             <h1 class="titulo-principal">Muestra de nuestro platos</h1>
                 <div class="principal-item">
                     <img class="img-principal" src="assets/img/principal.jpg" alt="">
@@ -38,21 +37,24 @@
                 </div>
         </section>
         
-        <section class="platos-container">
+        <section class="platos-container" id="platos">
             <h2 class="title-platos">Seccion de platos</h2>
             <div class="platos-grid">
                 <div class="platos-grid-item">
-                    <img src="assets/img/plato2.jpg" alt="">
-                    <img src="assets/img/plato3.jpg" alt="">
-                    <img src="assets/img/plato4.jpg" alt="">
-                    <img src="assets/img/plato2.jpg" alt="">
-                    <img src="assets/img/plato3.jpg" alt="">
+                    <img class="platos" src="assets/img/plato2.jpg" alt="">
+                    <img class="platos" src="assets/img/plato3.jpg" alt="">
+                    <img class="platos" src="assets/img/plato4.jpg" alt="">
+                    <img class="platos" src="assets/img/plato2.jpg" alt="">
+                    <img class="platos" src="assets/img/plato3.jpg" alt="">
                 </div>
             </div>
         </section>
     </main>
     <footer>
-        prueba
+        <div class="redes" id="footer">
+            <img src="assets/img/svg/instagram.svg" alt="">
+            <img src="assets/img/svg/facebook.svg" alt="">
+        </div>
     </footer>
 </body>
 </html>
